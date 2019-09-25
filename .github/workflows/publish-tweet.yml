@@ -13,5 +13,5 @@ jobs:
     - name: GitHub Action for IFTTT
       uses: screendriver/ifttt-action@v1.0.0
       with:
-        event: release
-        key: ${{ secrets.IFTTT_KEY }}
+        event: ${{secrets.IFTTT_EVENT}}
+        key: ${{secrets.IFTTT_KEY}}
