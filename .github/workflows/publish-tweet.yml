@@ -8,8 +8,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-        - name: GitHub Action for IFTTT
-          uses: luwangel/ifttt-action@v1.1.0
+        - name: Luwangel GitHub Action for IFTTT
+          uses: Luwangel/my-ifttt-action@v0.1.0
           with:
             event: ${{secrets.IFTTT_EVENT}}
             key: ${{secrets.IFTTT_KEY}}
