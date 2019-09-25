@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
         - name: GitHub Action for IFTTT
-          uses: luwangel/ifttt-action
+          uses: luwangel/ifttt-action@master
           with:
             event: ${{secrets.IFTTT_EVENT}}
             key: ${{secrets.IFTTT_KEY}}
