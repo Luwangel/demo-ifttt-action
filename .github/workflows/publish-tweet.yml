@@ -2,14 +2,14 @@ name: CI
 
 on:
   release:
-    types: [published, created, edited]
+    types: [published]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
         - name: GitHub Action for IFTTT
-          uses: screendriver/ifttt-action@v1.0.0
+          uses: luwangel/ifttt-action@master
           with:
             event: ${{secrets.IFTTT_EVENT}}
             key: ${{secrets.IFTTT_KEY}}
